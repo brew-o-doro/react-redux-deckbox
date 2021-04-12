@@ -60439,3 +60439,252 @@ Processing by CardsController#index as HTML
 Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 1144)
 
 
+Started GET "/cards" for ::1 at 2021-04-12 10:19:37 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 51ms (Views: 39.8ms | ActiveRecord: 1.3ms | Allocations: 8163)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:19:50 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1166)
+
+
+Started POST "/cards" for ::1 at 2021-04-12 10:20:42 -0500
+Processing by CardsController#create as */*
+  Parameters: {"name"=>" Cardfight!! Vanguard Wiki - Fandom Ranunculus Flower Maiden, Ahsha", "quantity"=>"4", "card_type"=>"Unit", "image"=>"https://static.wikia.nocookie.net/cardfight/images/7/7a/V-TD12-001EN.png/revision/latest/scale-to-width-down/340?cb=20200624041717", "card"=>{"name"=>" Cardfight!! Vanguard Wiki - Fandom Ranunculus Flower Maiden, Ahsha", "quantity"=>"4", "card_type"=>"Unit", "image"=>"https://static.wikia.nocookie.net/cardfight/images/7/7a/V-TD12-001EN.png/revision/latest/scale-to-width-down/340?cb=20200624041717"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+  [1m[36mCard Create (3.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", " Cardfight!! Vanguard Wiki - Fandom Ranunculus Flower Maiden, Ahsha"], ["quantity", 4], ["card_type", "Unit"], ["image", "https://static.wikia.nocookie.net/cardfight/images/7/7a/V-TD12-001EN.png/revision/latest/scale-to-width-down/340?cb=20200624041717"], ["created_at", "2021-04-12 15:20:42.414705"], ["updated_at", "2021-04-12 15:20:42.414705"]]
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+Completed 201 Created in 12ms (Views: 0.9ms | ActiveRecord: 5.1ms | Allocations: 2100)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:21:25 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1308)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:23:29 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1308)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:25:24 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 1290)
+
+
+Started POST "/cards" for ::1 at 2021-04-12 10:25:51 -0500
+Processing by CardsController#create as */*
+  Parameters: {"name"=>"Pyschic Bird", "quantity"=>"1", "card_type"=>"Critical Trigger", "image"=>"https://4heal12crit.files.wordpress.com/2012/09/psychicbird.jpg", "card"=>{"name"=>"Pyschic Bird", "quantity"=>"1", "card_type"=>"Critical Trigger", "image"=>"https://4heal12crit.files.wordpress.com/2012/09/psychicbird.jpg"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Pyschic Bird"], ["quantity", 1], ["card_type", "Critical Trigger"], ["image", "https://4heal12crit.files.wordpress.com/2012/09/psychicbird.jpg"], ["created_at", "2021-04-12 15:25:51.537449"], ["updated_at", "2021-04-12 15:25:51.537449"]]
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 2.4ms | Allocations: 1813)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:26:51 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1432)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:27:07 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:40:01 -0500
+Processing by CardsController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 1.0ms | Allocations: 2012)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:40:20 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:40:50 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 10:42:26 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:00:03 -0500
+Processing by CardsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+  [1m[36mCard Load (3.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 5.6ms | Allocations: 2011)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:00:06 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (2.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 2.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:00:09 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:00:12 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 1431)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:00:13 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:00:14 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.6ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:02:23 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:03:55 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:04:10 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:04:12 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:04:17 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:04:27 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1431)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:07:30 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:07:32 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:07:33 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (1.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.9ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:07:34 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:07:36 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:16:01 -0500
+Processing by CardsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 2.6ms | Allocations: 2012)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:16:17 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 11:16:19 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1430)
+
+

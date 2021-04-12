@@ -19,6 +19,12 @@ class CardForm extends Component {
     handleSubmit = (event) =>{
         event.preventDefault();
         this.props.addCard(this.state);
+        this.setState({
+            name: '',
+            quantity: 0,
+            card_type: '',
+            image: ''
+        })
     }
 
     render() {

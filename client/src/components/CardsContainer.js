@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchCards } from '../actions/cardsActions';
-import CardForm from '../components/CardForm'
+// import CardForm from '../components/CardForm'
 
 
 class CardsContainer extends Component {
@@ -12,7 +12,7 @@ class CardsContainer extends Component {
         return (
             <div>
                 Cards Container
-                <CardForm />
+                {/* <CardForm /> */}
             </div>
         )
     }

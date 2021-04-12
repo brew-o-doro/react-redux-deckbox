@@ -1,12 +1,12 @@
 import React from 'react';
-import CardsContainer from '../components/CardsContainer';
+import NavBar from './NavBar';
 
 import Router from './Router';
 
 const App = () => {
     return(
         <div>
-            <CardsContainer />
+            <NavBar />
             <Router />
         </div>
     )
