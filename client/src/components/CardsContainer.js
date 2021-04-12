@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCards } from '../actions/cardsActions'
+import { fetchCards } from '../actions/cardsActions';
+import CardForm from '../components/CardForm'
+
 
 class CardsContainer extends Component {
     componentDidMount() {
@@ -10,6 +12,7 @@ class CardsContainer extends Component {
         return (
             <div>
                 Cards Container
+                <CardForm />
             </div>
         )
     }

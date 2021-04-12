@@ -1,21 +1,35 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import { addCard } from '../actions/cardsActions';
 
 class CardForm extends Component {
     state = {
         name: '',
-        quantity: '',
+        quantity: 0,
         card_type: '',
         image: ''
     }
 
+    handleChange = (event) =>{
+        const { name, value } = event.target
+        this.setState({[name]: value})
+    }
+
+    handleSubmit = (event) =>{
+        event.preventDefault();
+        this.props.addCard(this.state);
+    }
+
     render() {
         return (
-            <form>
+            
+            <form onSubmit={this.handleSubmit}>
                 <label className="label">Name:</label>
                 <input type="text" value={this.state.name} onChange={this.handleChange} name="name" />
                 <br/>
                 <label className="label">Quantity:</label>
-                <input type="text" value={this.state.quantity} onChange={this.handleChange} name="quantity" />
+                <input type="number" value={this.state.quantity} onChange={this.handleChange} name="quantity" />
                 <br/>
                 <label className="label">Card TypeError:</label>
                 <input type="text" value={this.state.card_type} onChange={this.handleChange} name="card_type" />
@@ -28,7 +42,7 @@ class CardForm extends Component {
         )
     }
 }
-export default CardForm;
+export default connect(null, { addCard })(CardForm);
 
 // t.string "name"
 // t.integer "quantity"
