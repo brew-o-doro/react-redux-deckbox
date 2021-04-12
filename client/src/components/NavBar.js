@@ -18,20 +18,21 @@ const NavBar = () => {
             </NavLink>
 
             <NavLink to='/cards' className='item'>
-                See Your Cards
+                See Your Cards And Add A Card 
             </NavLink>
 
+            
+
+            {/* <NavLink to='/add-cards' className='item'>
+                Add a Card to Your Collection
+            </NavLink> */}
+
+            <NavLink to='/scratchpads' className='item'>
+                See Your ScratchPad Add a Note to your Scratchpad
+            </NavLink>
             <NavLink to='/about' className='item'>
                 About Us
             </NavLink> 
-
-            <NavLink to='/add-cards' className='item'>
-                Add a Card to Your Collection
-            </NavLink>
-
-            <NavLink to='/scratchpads' className='item'>
-                Add a Note to your Scratchpad
-            </NavLink>
         </Menu>
         </div>
     )

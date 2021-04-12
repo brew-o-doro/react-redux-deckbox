@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import { addScratchpad } from '../actions/scratchpadsActions';
 
+import { Button, Divider, Form } from 'semantic-ui-react';
+
 class ScratchpadForm extends Component {
     state = {
         text: ''
@@ -23,13 +25,17 @@ class ScratchpadForm extends Component {
 
     render() {
         return (
-            
-            <form onSubmit={this.handleSubmit}>
-                <label className="label">Your Note:</label>
-                <input type="text" value={this.state.text} onChange={this.handleChange} name="text" />
-                <br/>
-                <input type="submit" value="Submit Note" />
-            </form>
+            <div>
+            <Divider />
+            <Form onSubmit={this.handleSubmit}>
+                <Form.Field>
+                    <label className="label">Your Note:</label>
+                    <input type="text" value={this.state.text} onChange={this.handleChange} name="text" />
+                    <br/>
+                </Form.Field>
+                    <Button type="submit" value="Submit Note">Submit Note</Button>
+            </Form>
+            </div>
         )
     }
 }

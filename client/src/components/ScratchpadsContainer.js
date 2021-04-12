@@ -12,9 +12,10 @@ class ScratchpadsContainer extends Component {
     render() {        
         return (
             <div>
-                ScratchPad Container
+                <h1>Welcome to Your Scratchpad!</h1>
                 
                 <ScratchpadForm />
+                <br />
                 <ScratchpadList />
             </div>
         )
