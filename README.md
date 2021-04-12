@@ -37,3 +37,6 @@ You should see the app from `localhost:3001`.
 * Add user signup with jwt authentication
 * See a users deckbox and notes
  
+ ## License
+
+The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
