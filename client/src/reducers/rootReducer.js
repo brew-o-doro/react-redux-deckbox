@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import { cardsReducer } from './cardsReducer'
-import { usersReducer } from './usersReducer'
+import { scratchpadsReducer } from './scratchpadsReducer'
 
 export const rootReducer = combineReducers({
-    users: usersReducer,
+    scratchpads: scratchpadsReducer,
     cards: cardsReducer
 })

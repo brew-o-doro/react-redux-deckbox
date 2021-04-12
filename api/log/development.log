@@ -60688,3 +60688,192 @@ Processing by CardsController#index as */*
 Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1430)
 
 
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Big Card"], ["quantity", 4], ["card_type", "trainer"], ["image", "https://i.ebayimg.com/images/g/xqcAAOSwjQRfpJet/s-l500.jpg"], ["created_at", "2021-04-12 19:08:20.332296"], ["updated_at", "2021-04-12 19:08:20.332296"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bigger Card"], ["quantity", 4], ["card_type", "support"], ["image", "https://img.redbull.com/images/c_crop,x_0,y_0,h_500,w_400/c_fill,w_860,h_1075/q_auto,f_auto/redbullcom/2017/10/20/6d662536-3fed-4236-8db7-14c16d08e5c0/shiny-gyarados-pokemon-trading-card-game"], ["created_at", "2021-04-12 19:08:20.362396"], ["updated_at", "2021-04-12 19:08:20.362396"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Biggest Card"], ["quantity", 4], ["card_type", "trainer"], ["image", "https://static.wikia.nocookie.net/cardfight/images/b/b8/G-TD12-003EN.png/revision/latest?cb=20170214151038"], ["created_at", "2021-04-12 19:08:20.368216"], ["updated_at", "2021-04-12 19:08:20.368216"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cards" for ::1 at 2021-04-12 14:09:01 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 11.3ms | ActiveRecord: 1.6ms | Allocations: 7955)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 14:09:04 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1025)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateScratchpads (20210412191018)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "scratchpads" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210412191018"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.8ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (1.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mScratchpad Load (0.2ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Big Card"], ["quantity", 4], ["card_type", "trainer"], ["image", "https://i.ebayimg.com/images/g/xqcAAOSwjQRfpJet/s-l500.jpg"], ["created_at", "2021-04-12 19:12:06.521157"], ["updated_at", "2021-04-12 19:12:06.521157"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bigger Card"], ["quantity", 4], ["card_type", "support"], ["image", "https://img.redbull.com/images/c_crop,x_0,y_0,h_500,w_400/c_fill,w_860,h_1075/q_auto,f_auto/redbullcom/2017/10/20/6d662536-3fed-4236-8db7-14c16d08e5c0/shiny-gyarados-pokemon-trading-card-game"], ["created_at", "2021-04-12 19:12:06.530243"], ["updated_at", "2021-04-12 19:12:06.530243"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Biggest Card"], ["quantity", 4], ["card_type", "trainer"], ["image", "https://static.wikia.nocookie.net/cardfight/images/b/b8/G-TD12-003EN.png/revision/latest?cb=20170214151038"], ["created_at", "2021-04-12 19:12:06.537246"], ["updated_at", "2021-04-12 19:12:06.537246"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mScratchpad Create (0.4ms)[0m  [1m[32mINSERT INTO "scratchpads" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "This is the strategy for using my first deck! Also I need to add more cards!"], ["created_at", "2021-04-12 19:12:06.549062"], ["updated_at", "2021-04-12 19:12:06.549062"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/scratchpad" for ::1 at 2021-04-12 14:16:12 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/scratchpad"):
+  
+Started GET "/scratchpads" for ::1 at 2021-04-12 14:16:18 -0500
+Processing by ScratchpadsController#index as HTML
+  [1m[36mScratchpad Load (0.7ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 1.4ms | Allocations: 4052)
+
+
+Started GET "/scratchpads" for ::1 at 2021-04-12 14:22:33 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+  [1m[36mScratchpad Load (0.6ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.0ms | Allocations: 1297)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 14:22:41 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 2.0ms | Allocations: 5115)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 14:22:44 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (1.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 1.5ms | Allocations: 1025)
+
+
+Started GET "/scratchpads" for ::1 at 2021-04-12 14:23:22 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[36mScratchpad Load (0.3ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 695)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 14:23:28 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/scratchpads" for ::1 at 2021-04-12 14:28:12 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[36mScratchpad Load (0.4ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.4ms | Allocations: 695)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 14:37:48 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 14.9ms | ActiveRecord: 1.6ms | Allocations: 8053)
+
+
+Started GET "/cards" for ::1 at 2021-04-12 14:42:31 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 1.5ms | Allocations: 7959)
+
+
+Started GET "/scratchpads" for ::1 at 2021-04-12 14:42:35 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[36mScratchpad Load (0.6ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 1.6ms | Allocations: 3029)
+
+
+Started POST "/scratchpads" for ::1 at 2021-04-12 14:42:58 -0500
+Processing by ScratchpadsController#create as */*
+  Parameters: {"text"=>"Score: Me 1 - React 0!", "scratchpad"=>{"text"=>"Score: Me 1 - React 0!"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/scratchpads_controller.rb:20:in `create'
+  [1m[36mScratchpad Create (1.0ms)[0m  [1m[32mINSERT INTO "scratchpads" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "Score: Me 1 - React 0!"], ["created_at", "2021-04-12 19:42:58.674787"], ["updated_at", "2021-04-12 19:42:58.674787"]]
+  ↳ app/controllers/scratchpads_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/scratchpads_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 1.0ms | ActiveRecord: 2.2ms | Allocations: 1991)
+
+
+Started POST "/scratchpads" for ::1 at 2021-04-12 14:44:08 -0500
+Processing by ScratchpadsController#create as */*
+  Parameters: {"text"=>"Score Update: Me 1 - React 3", "scratchpad"=>{"text"=>"Score Update: Me 1 - React 3"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/scratchpads_controller.rb:20:in `create'
+  [1m[36mScratchpad Create (0.6ms)[0m  [1m[32mINSERT INTO "scratchpads" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "Score Update: Me 1 - React 3"], ["created_at", "2021-04-12 19:44:08.310536"], ["updated_at", "2021-04-12 19:44:08.310536"]]
+  ↳ app/controllers/scratchpads_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/scratchpads_controller.rb:20:in `create'
+Completed 201 Created in 7ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 1736)
+
+

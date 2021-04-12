@@ -18,7 +18,7 @@ const NavBar = () => {
             </NavLink>
 
             <NavLink to='/cards' className='item'>
-                View All Cards In Your Deckbox
+                See Your Cards
             </NavLink>
 
             <NavLink to='/about' className='item'>
@@ -27,6 +27,10 @@ const NavBar = () => {
 
             <NavLink to='/add-cards' className='item'>
                 Add a Card to Your Collection
+            </NavLink>
+
+            <NavLink to='/scratchpads' className='item'>
+                Add a Note to your Scratchpad
             </NavLink>
         </Menu>
         </div>
