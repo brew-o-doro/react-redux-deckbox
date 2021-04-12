@@ -31,7 +31,7 @@ class CardForm extends Component {
                 <label className="label">Quantity:</label>
                 <input type="number" value={this.state.quantity} onChange={this.handleChange} name="quantity" />
                 <br/>
-                <label className="label">Card TypeError:</label>
+                <label className="label">Card Type:</label>
                 <input type="text" value={this.state.card_type} onChange={this.handleChange} name="card_type" />
                 <br/>
                 <label className="label">Image:</label>
