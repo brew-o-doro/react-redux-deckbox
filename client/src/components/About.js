@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Container, Header } from 'semantic-ui-react';
 
 const About = () => {
     return (
         <div>
-            <h1>About</h1>
+          <Container>
+            <br/>
+            <Header as='h1'>About</Header>
 
-            <h3>React Deckbox is an app with a Javascript frontend and Ruby on Rails API backend to create a collection of cards to keep track of your inventory or perspective card pulls with the Scratchpad feature! </h3>
+            <p>React Deckbox is an app with a Javascript frontend and Ruby on Rails API backend to create a collection of cards to keep track of your inventory or perspective card pulls with the Scratchpad feature! </p>
+
+          </Container>
         </div>
     )
 }
