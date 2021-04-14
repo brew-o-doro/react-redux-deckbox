@@ -61044,3 +61044,189 @@ Processing by CardsController#index as */*
 Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 1007)
 
 
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (34.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mScratchpad Load (0.2ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mScratchpad Destroy (0.7ms)[0m  [1m[31mDELETE FROM "scratchpads" WHERE "scratchpads"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (20.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mScratchpad Destroy (0.2ms)[0m  [1m[31mDELETE FROM "scratchpads" WHERE "scratchpads"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (19.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mScratchpad Destroy (0.2ms)[0m  [1m[31mDELETE FROM "scratchpads" WHERE "scratchpads"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (25.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Big Card"], ["quantity", 4], ["card_type", "trainer"], ["image", "https://i.ebayimg.com/images/g/xqcAAOSwjQRfpJet/s-l500.jpg"], ["created_at", "2021-04-14 01:04:59.606794"], ["updated_at", "2021-04-14 01:04:59.606794"]]
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bigger Card"], ["quantity", 4], ["card_type", "support"], ["image", "https://img.redbull.com/images/c_crop,x_0,y_0,h_500,w_400/c_fill,w_860,h_1075/q_auto,f_auto/redbullcom/2017/10/20/6d662536-3fed-4236-8db7-14c16d08e5c0/shiny-gyarados-pokemon-trading-card-game"], ["created_at", "2021-04-14 01:04:59.631989"], ["updated_at", "2021-04-14 01:04:59.631989"]]
+  [1m[36mTRANSACTION (31.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "quantity", "card_type", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Biggest Card"], ["quantity", 4], ["card_type", "trainer"], ["image", "https://static.wikia.nocookie.net/cardfight/images/b/b8/G-TD12-003EN.png/revision/latest?cb=20170214151038"], ["created_at", "2021-04-14 01:04:59.676386"], ["updated_at", "2021-04-14 01:04:59.676386"]]
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mScratchpad Create (0.3ms)[0m  [1m[32mINSERT INTO "scratchpads" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "This is the strategy for using my first deck! Also I need to add more cards!"], ["created_at", "2021-04-14 01:04:59.699293"], ["updated_at", "2021-04-14 01:04:59.699293"]]
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:43:01 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 9025)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:49:20 -0500
+Processing by CardsController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.5ms | Allocations: 1607)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:50:20 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1025)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:50:36 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1025)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:51:42 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1025)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:52:23 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:52:34 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:53:21 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:53:53 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:55:13 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:57:14 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:57:43 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 20:58:14 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 21:01:22 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 21:02:05 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/scratchpads" for 127.0.0.1 at 2021-04-13 21:03:04 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[36mScratchpad Load (0.3ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 1.0ms | Allocations: 3216)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 21:03:07 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 1007)
+
+
+Started GET "/scratchpads" for 127.0.0.1 at 2021-04-13 21:03:09 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[36mScratchpad Load (0.1ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 695)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 21:03:10 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/scratchpads" for 127.0.0.1 at 2021-04-13 21:03:12 -0500
+Processing by ScratchpadsController#index as */*
+  [1m[36mScratchpad Load (0.1ms)[0m  [1m[34mSELECT "scratchpads".* FROM "scratchpads"[0m
+  ↳ app/controllers/scratchpads_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 695)
+
+
+Started GET "/cards" for 127.0.0.1 at 2021-04-13 21:03:17 -0500
+Processing by CardsController#index as */*
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/controllers/cards_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.9ms | Allocations: 1007)
+
+
